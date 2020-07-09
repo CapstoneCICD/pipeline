@@ -24,6 +24,7 @@ resource "google_compute_instance" "vm_instance" {
   boot_disk {
     initialize_params {
       image = "ubuntu-1804-bionic-v20200317"
+     size = 50GB
     }
   }
   network_interface {
